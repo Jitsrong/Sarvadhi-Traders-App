@@ -1,0 +1,155 @@
+2024-11-20 15:43:36,755 DEBUG cd frappe-bench && python3 -m venv env
+2024-11-20 15:43:38,342 DEBUG cd frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-11-20 15:43:40,296 DEBUG cd frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-11-20 15:43:42,183 LOG Getting frappe
+2024-11-20 15:43:42,184 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-11-20 15:43:49,836 LOG Installing frappe
+2024-11-20 15:43:49,836 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/jitunath/sarvadhitraders/frappe-bench/apps/frappe 
+2024-11-20 15:44:30,916 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench/apps/frappe && yarn install --check-files
+2024-11-20 15:44:38,100 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-11-20 15:44:38,100 DEBUG cd frappe-bench && bench build
+2024-11-20 15:44:38,291 INFO /Users/jitunath/Library/Python/3.9/bin/bench build
+2024-11-20 15:44:48,089 LOG setting up backups
+2024-11-20 15:46:11,002 LOG backups were set up
+2024-11-20 15:46:11,003 INFO Bench frappe-bench initialized
+2024-11-20 15:47:15,944 INFO /Users/jitunath/Library/Python/3.9/bin/bench new-site sarvadhi-trade.com
+2024-11-20 15:49:39,695 INFO /Users/jitunath/Library/Python/3.9/bin/bench get-app payments
+2024-11-20 15:49:40,661 LOG Getting payments
+2024-11-20 15:49:40,661 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2024-11-20 15:49:42,174 LOG Installing payments
+2024-11-20 15:49:42,174 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/jitunath/sarvadhitraders/frappe-bench/apps/payments 
+2024-11-20 15:49:59,508 DEBUG bench build --app payments
+2024-11-20 15:49:59,631 INFO /Users/jitunath/Library/Python/3.9/bin/bench build --app payments
+2024-11-20 15:50:01,500 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-11-20 15:50:20,599 INFO /Users/jitunath/Library/Python/3.9/bin/bench get-app --branch version-15 erpnext
+2024-11-20 15:50:21,417 LOG Getting erpnext
+2024-11-20 15:50:21,418 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-11-20 15:50:28,563 LOG Installing erpnext
+2024-11-20 15:50:28,563 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/jitunath/sarvadhitraders/frappe-bench/apps/erpnext 
+2024-11-20 15:50:37,657 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench/apps/erpnext && yarn install --check-files
+2024-11-20 15:50:37,893 DEBUG bench build --app erpnext
+2024-11-20 15:50:38,021 INFO /Users/jitunath/Library/Python/3.9/bin/bench build --app erpnext
+2024-11-20 15:50:39,991 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-11-20 15:51:05,429 INFO /Users/jitunath/Library/Python/3.9/bin/bench get-app hrms
+2024-11-20 15:51:06,270 LOG Getting hrms
+2024-11-20 15:51:06,270 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2024-11-20 15:51:09,006 LOG Installing hrms
+2024-11-20 15:51:09,006 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/jitunath/sarvadhitraders/frappe-bench/apps/hrms 
+2024-11-20 15:51:10,510 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench/apps/hrms && yarn install --check-files
+2024-11-20 15:52:40,698 DEBUG bench build --app hrms
+2024-11-20 15:52:40,868 INFO /Users/jitunath/Library/Python/3.9/bin/bench build --app hrms
+2024-11-20 15:52:54,450 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-11-20 15:54:53,218 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com install-app erpnext
+2024-11-20 16:02:31,612 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com install-app hrms
+2024-11-20 16:04:42,178 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com install-app payments
+2024-11-20 16:06:07,089 INFO /Users/jitunath/Library/Python/3.9/bin/bench new-app sarvadhi-traders
+2024-11-20 16:06:07,093 LOG creating new app sarvadhi_traders
+2024-11-20 16:07:22,149 LOG Installing sarvadhi_traders
+2024-11-20 16:07:22,152 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/jitunath/sarvadhitraders/frappe-bench/apps/sarvadhi_traders 
+2024-11-20 16:07:23,525 DEBUG bench build --app sarvadhi_traders
+2024-11-20 16:07:23,662 INFO /Users/jitunath/Library/Python/3.9/bin/bench build --app sarvadhi_traders
+2024-11-20 16:07:25,406 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-11-20 16:07:43,651 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com install-app sarvadhi-traders
+2024-11-20 16:08:42,685 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com install-app sarvadhi_traders
+2024-11-20 16:08:58,472 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 16:08:58,896 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 16:08:58,911 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 16:08:58,921 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 16:08:58,925 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 16:10:15,126 INFO /Users/jitunath/Library/Python/3.9/bin/bench use sarvadhi-trade.com
+2024-11-20 16:10:21,433 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 16:11:29,278 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 16:11:29,574 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 16:11:29,583 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 16:11:29,584 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 16:11:29,614 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 16:32:15,202 INFO /Users/jitunath/Library/Python/3.9/bin/bench set-config developer_mode 1
+2024-11-20 16:57:49,008 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:01:30,823 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:03:57,174 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:06:42,106 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:09:09,518 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:11:59,094 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:13:57,190 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:16:04,297 INFO /Users/jitunath/Library/Python/3.9/bin/bench set-config developer_mode 1
+2024-11-20 17:16:09,840 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:17:25,267 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:21:13,204 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:23:42,105 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:24:11,839 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 17:24:12,162 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 17:24:12,172 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 17:24:12,173 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 17:24:12,188 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 17:25:06,092 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:25:20,458 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 17:25:20,771 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 17:25:20,772 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 17:25:20,774 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 17:25:20,781 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 17:27:07,659 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 17:27:07,950 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 17:27:07,957 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 17:27:07,986 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 17:27:07,986 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 17:30:43,715 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:30:57,781 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 17:30:58,099 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 17:30:58,100 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 17:30:58,117 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 17:30:58,126 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 17:33:17,772 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:33:41,641 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 17:33:41,960 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 17:33:41,964 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 17:33:41,981 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 17:33:41,992 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 17:34:04,976 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 17:40:09,838 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi_trade.com install-app hrms
+2024-11-20 17:40:59,233 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com install-app sarvadhi_traders.com
+2024-11-20 17:41:26,876 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com install-app sarvadhi_traders
+2024-11-20 17:41:47,844 INFO /Users/jitunath/Library/Python/3.9/bin/bench set up all requirements
+2024-11-20 17:55:38,217 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com uninstall-app sarvadhi_traders --force
+2024-11-20 17:56:21,563 INFO /Users/jitunath/Library/Python/3.9/bin/bench remove installed apps sarvadhi_traders
+2024-11-20 17:56:21,567 WARNING /Users/jitunath/Library/Python/3.9/bin/bench remove installed apps sarvadhi_traders executed with exit code 2
+2024-11-20 17:57:18,718 INFO /Users/jitunath/Library/Python/3.9/bin/bench uninstall-app sarvadhi_traders
+2024-11-20 17:57:48,392 INFO /Users/jitunath/Library/Python/3.9/bin/bench remove app sarvadhi_traders
+2024-11-20 17:57:48,396 WARNING /Users/jitunath/Library/Python/3.9/bin/bench remove app sarvadhi_traders executed with exit code 2
+2024-11-20 17:59:01,021 INFO /Users/jitunath/Library/Python/3.9/bin/bench remove-app sarvadhi_traders
+2024-11-20 17:59:01,121 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site all list-apps --format json
+2024-11-20 17:59:01,556 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com list-apps
+2024-11-20 17:59:01,799 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip uninstall -y sarvadhi_traders
+2024-11-20 17:59:02,310 INFO App moved from apps/sarvadhi_traders to archived/apps/sarvadhi_traders-2024-11-20
+2024-11-20 17:59:02,320 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-11-20 18:00:00,746 INFO /Users/jitunath/Library/Python/3.9/bin/bench --verbose --site all backup
+2024-11-20 18:00:30,435 INFO /Users/jitunath/Library/Python/3.9/bin/bench new-app sarvadhi-trade
+2024-11-20 18:00:30,438 LOG creating new app sarvadhi_trade
+2024-11-20 18:01:06,147 LOG Installing sarvadhi_trade
+2024-11-20 18:01:06,149 DEBUG cd /Users/jitunath/sarvadhitraders/frappe-bench && /Users/jitunath/sarvadhitraders/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/jitunath/sarvadhitraders/frappe-bench/apps/sarvadhi_trade 
+2024-11-20 18:01:07,643 DEBUG bench build --app sarvadhi_trade
+2024-11-20 18:01:07,763 INFO /Users/jitunath/Library/Python/3.9/bin/bench build --app sarvadhi_trade
+2024-11-20 18:01:09,519 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-11-20 18:01:32,846 INFO /Users/jitunath/Library/Python/3.9/bin/bench --site sarvadhi-trade.com install-app sarvadhi_trade
+2024-11-20 18:01:44,174 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 18:01:58,544 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 18:01:58,849 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 18:01:58,849 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 18:01:58,854 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 18:01:58,871 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 18:14:06,251 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 18:14:06,560 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 18:14:06,566 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 18:14:06,568 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 18:14:06,570 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 18:17:10,590 INFO /Users/jitunath/Library/Python/3.9/bin/bench migrate
+2024-11-20 18:17:31,456 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 18:17:31,767 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-20 18:17:31,777 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 18:17:31,778 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 18:17:31,785 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 20:28:14,569 INFO /Users/jitunath/Library/Python/3.9/bin/bench start
+2024-11-20 20:28:14,893 INFO /Users/jitunath/Library/Python/3.9/bin/bench serve --port 8000
+2024-11-20 20:28:14,894 INFO /Users/jitunath/Library/Python/3.9/bin/bench watch
+2024-11-20 20:28:14,904 INFO /Users/jitunath/Library/Python/3.9/bin/bench worker
+2024-11-20 20:28:14,912 INFO /Users/jitunath/Library/Python/3.9/bin/bench schedule
+2024-11-21 00:00:01,999 INFO /Users/jitunath/Library/Python/3.9/bin/bench --verbose --site all backup

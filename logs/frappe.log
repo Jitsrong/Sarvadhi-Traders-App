@@ -1,0 +1,33 @@
+2024-11-20 22:58:36,493 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'fields': "['delivery_status','customer','sales_order','delivery_date','notes']"}
+2024-11-20 23:00:16,122 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'fields': "['delivery_status','customer','sales_order','delivery_date']"}
+2024-11-20 23:01:06,655 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'fields': '["delivery_status","customer","sales_order",\'delivery_date"]'}
+2024-11-20 23:01:08,821 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'fields': '["delivery_status","customer","sales_order",\'delivery_date"]'}
+2024-11-20 23:01:47,552 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'fields': '["delivery_status","customer","sales_order",\'delivery_date"]'}
+2024-11-20 23:01:50,789 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'fields': '["delivery_status","customer","sales_order",\'delivery_date"]'}
+2024-11-21 01:01:06,230 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'book': 'DLV-SCD-0028', 'cmd': 'sarvadhi_trade.custom_scripts.delivery_schedule.send_email_cust'}
+2024-11-21 01:01:39,463 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'cmd': 'sarvadhi_trade.custom_scripts.delivery_schedule.send_email_cust'}
+2024-11-21 01:04:15,093 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'cmd': 'sarvadhi_trade.custom_scripts.delivery_schedule.send_email_cust'}
+2024-11-21 01:11:50,109 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'delivery_date': '2024-11-23', 'cmd': 'sarvadhi_trade.custom_scripts.delivery_schedule.send_email_cust'}
+2024-11-21 01:12:37,645 ERROR frappe New Exception collected in error log
+Site: sarvadhi-trade.com
+Form Dict: {'delivery_date': '2024-11-23', 'cmd': 'sarvadhi_trade.custom_scripts.delivery_schedule.send_email_cust'}
